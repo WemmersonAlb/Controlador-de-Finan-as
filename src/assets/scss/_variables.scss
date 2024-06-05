@@ -10,3 +10,16 @@ $light:#fff;
 
 $feature: #7deb24;
 $feature-dark: #43880a;
+
+:root {
+  --dark: #{$dark};
+  --darker: #{$darker};
+  --dark-medium: #{$dark-medium};
+  --dark-low: #{$dark-low};
+  --light-low: #{$light-low};
+  --light-medium: #{$light-medium};
+  --lighter: #{$lighter};
+  --light: #{$light};
+  --feature: #{$feature};
+  --feature-dark: #{$feature-dark};
+}

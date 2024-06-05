@@ -16,6 +16,14 @@ export default{
     alternarVisibilidadeSpinner(){
       this.visible = !this.visible;
     }
+  },
+  mounted(){
+    try {
+      console.log('Firebase App:', this.$firebase);  // Verifique se o Firebase está corretamente inicializado
+      console.log('Firebase Config:', this.$firebase.options);  // Verifique a configuração do Firebase
+    } catch (error) {
+      console.error('Erro ao inicializar o Firebase:', error);
+    }
   }
 }
 </script>
@@ -31,9 +39,8 @@ export default{
 </template>
 
 <style scoped lang="scss">
-@import '../src/assets/scss/variables';
 .base-app{
-  background-color: $darker;
+  background-color: var(--darker);
 }
 .flexbox{
   display: flex;
