@@ -6,3 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+.botao-primario{
+  background-color: var(--feature-dark) !important;
+}
+.botao-primario:hover{
+  background-color: var(--darker) !important;
+  color: var(--feature) !important;
+}
+
